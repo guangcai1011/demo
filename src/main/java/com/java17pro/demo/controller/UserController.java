@@ -21,5 +21,10 @@ public class UserController {
         return userList;
     }
 
+    @RequestMapping("/deleteUserByIds")
+    public String deleteUserByIds(){
+        int a = userService.deleteUserByIds();
 
+        return "delete successfully!";
+    }
 }
